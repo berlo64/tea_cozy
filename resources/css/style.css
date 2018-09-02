@@ -57,7 +57,7 @@ span.nav-li {
   position: absolute;
   top: 69px;
   left: 0;
-  right: 0
+  right: 0;
 }
 
 /* mission */
@@ -170,4 +170,38 @@ div.location {
 div.location h3,
 div.location span {
   margin: 20px 5px;
+}
+
+/* footer */
+
+div.footer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2071px;
+  width: 100%;
+  height: 250px;
+}
+
+div.contacts {
+  min-height: 200px;
+}
+
+div.contacts h2 {
+  margin: 10px auto;
+}
+
+div.contacts h5 {
+  margin: 30px auto 0 auto;
+}
+
+div.copyright {
+  margin: 0 0 10px 20px;
+}
+
+div.copyright h5 {
+  text-align: left;
+  margin: 0;
 }
