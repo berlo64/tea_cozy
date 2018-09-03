@@ -1,10 +1,9 @@
-/* Universal style */
+/* General style */
 
 body {
   font-family: Helvetica, sans-serif;
   font-size: 22px;
   color: #FFF5EE;
-  background-color: #000000;
   opacity: 0.9;
   text-align: center;
 }
@@ -14,12 +13,36 @@ a {
   text-decoration: underline;
 }
 
+.black {
+  background-color: #000000;
+}
+
+/* Flex style */
+
+.flex-item {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.just-cont {
+  justify-content: center;
+}
+
+.align {
+  align-items: center;
+}
+
 /* header */
 
 .header {
-  display: flex;
   flex-wrap: nowrap;
-  align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
@@ -28,7 +51,6 @@ a {
   z-index: 2;
   min-height: 69px;
   border-bottom: 1px solid #FFF5EE;
-  background-color: #000000;
 }
 
 .logo {
@@ -37,9 +59,6 @@ a {
 }
 
 .nav {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: space-around;
 }
 
@@ -50,12 +69,9 @@ span.nav-li {
 /* content */
 
 .content {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  top: 69px;
+  position: relative;
+  top: 61px;
   left: 0;
   right: 0;
 }
@@ -65,20 +81,11 @@ span.nav-li {
 .mission-img {
   background-image: url("../images/img-mission-background.jpg");
   max-width: 1200px;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 700px;
 }
 
 div.mission {
   margin: 0;
-  background-color: #000000;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   flex-basis: 1200px;
 }
 
@@ -91,10 +98,6 @@ div.mission {
 /* featured teas */
 
 div.featured {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   max-width: 1000px;
   padding-top: 60px;
 }
@@ -121,10 +124,12 @@ div.feat img {
 
 div.month h4 {
   margin: 15px auto;
+  min-width: 200px;
 }
 
 div.month h2 {
   margin: 20px auto;
+  min-width: 200px;
 }
 
 /* locations */
@@ -135,10 +140,6 @@ div.month h2 {
   min-width: 100px;
   min-height: 500px;
   margin-top: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 div.locations-img h2 {
@@ -147,11 +148,7 @@ div.locations-img h2 {
 }
 
 div.adress {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  align-items: center;
-  justify-content: center;
   margin: 0 90px;
 }
 
@@ -159,11 +156,6 @@ div.location {
   height: 300px;
   width: 300px;
   margin: 15px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #000000;
   opacity: 1;
 }
 
@@ -175,12 +167,10 @@ div.location span {
 /* footer */
 
 div.footer {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
+  position: relative;
   left: 0;
   right: 0;
-  top: 2071px;
+  top: 61px;
   width: 100%;
   height: 250px;
 }
